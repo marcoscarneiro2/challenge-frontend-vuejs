@@ -15,6 +15,8 @@ https://vue-flix-backend.herokuapp.com/media/{type}/search/{page}
 
 ``
 {type} = movie ou tv
+``
+``
 {page} = número da pagina
 ``
 
@@ -22,7 +24,6 @@ https://vue-flix-backend.herokuapp.com/media/{type}/search/{page}
 https://vue-flix-backend.herokuapp.com/media/{type}/{id}
 
 ``
-{type} = movie ou tv
 {id} = id da media, retornado na api anterior
 ``
 
