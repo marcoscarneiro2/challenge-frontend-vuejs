@@ -7,7 +7,7 @@ Caro desenvolvedor, nesse teste analisaremos seu conhecimento geral, organizaç�
 Abaixo explicaremos tudo o que será necessário.
 
 ## Instruções:
-O desafio consiste em implementar uma aplicação Web utilizando o vuejs simples.
+O desafio consiste em implementar uma aplicação Web SPA utilizando o vuejs.
 Você irá criar uma aplicação que consumirá dois endpointes.
 
 * Lista de filmes/series
@@ -26,4 +26,20 @@ https://vue-flix-backend.herokuapp.com/media/{type}/{id}
 ``
 {id} = id da media, retornado na api anterior
 ``
+
+## Tecnologias a serem utilizadas
+* HTML
+* CSS
+* Vuejs
+* Bootstrap
+
+## Considerações
++ Não é permitido uso de jquery
++ Deve-se utilizar o @vue/cli para criar o corpo do projeto
++ O layout/UX dessa aplicação fica a cargo desenvolvedor (isso também será avaliado)
++ O resultado final do projeto deverá conter 3 paginas:
+    + Lista de filmes, em forma de card
+    + Lista de séries, em forma de card
+    + Uma pagina de detalhamento do filme/série
+
 
