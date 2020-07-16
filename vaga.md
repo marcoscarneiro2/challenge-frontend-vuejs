@@ -47,7 +47,7 @@ https://vue-flix-backend.herokuapp.com/media/{type}/{id}
 Para iniciar o teste, faça um fork deste repositório, crie uma branch com o seu nome completo (ex: fulanodossantos) e depois envie-nos o pull request. 
 Se você apenas clonar o repositório não vai conseguir fazer push e depois vai ser mais complicado fazer o pull request.
 
-Envie também seu currículo para devteam@ointercase.com.br, caso ainda não tenha feito.
+Envie também seu currículo para devteam@intercase.com.br, caso ainda não tenha feito.
 
 ### Bônus:
 A entrega desses requisitos será considerado como um diferencial para a vaga, mas não é obrigatório.
@@ -75,7 +75,7 @@ https://vue-flix-backend.herokuapp.com/media/movie/search/1?genre={genre}year={y
 * Legibilidade.
 * Comentários.
 
-## Qualquer dúvida sobre esse teste, favor enviar um email para devteam@ointercase.com.br
+## Qualquer dúvida sobre esse teste, favor enviar um email para devteam@intercase.com.br
 
 
 # Boa sorte!!!
