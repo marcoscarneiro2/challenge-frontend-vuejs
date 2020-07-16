@@ -1,5 +1,5 @@
 <p>
-    <img src="https://s3.amazonaws.com/img-intercase/wp-content/uploads/2018/10/24205748/logoWebsite1.png" width="300">
+    <img src="https://s3.amazonaws.com/img-intercase/wp-content/uploads/2018/10/24205748/logoWebsite1.png" width="300">    
 </p>
 
 ## Desafio para candidatos à vaga de Desenvolvedor Front-end + Vuejs (Pleno/Sênior).
@@ -18,7 +18,7 @@ https://vue-flix-backend.herokuapp.com/media/{type}/search/{page}
 ``
 
 ``
-{page} = número da pagina
+{page} = número da pagina.
 ``
 
 * Detalhes do filme/serie
@@ -37,7 +37,7 @@ https://vue-flix-backend.herokuapp.com/media/{type}/{id}
 ## Considerações
 + Não é permitido uso de jquery
 + Deve-se utilizar o @vue/cli para criar o corpo do projeto
-+ O layout/UX dessa aplicação fica a cargo desenvolvedor (isso também será avaliado)
++ O layout/UX dessa aplicação fica a cargo desenvolvedor (isso também será avaliado).
 + O resultado final do projeto deverá conter 3 paginas:
     + Lista de filmes, em forma de card
     + Lista de séries, em forma de card
@@ -75,7 +75,7 @@ https://vue-flix-backend.herokuapp.com/media/movie/search/1?genre={genre}year={y
 * Legibilidade.
 * Comentários.
 
-# Qualquer dúvida sobre esse teste, favor enviar um email para devteam@ointercase.com.br
+## Qualquer dúvida sobre esse teste, favor enviar um email para devteam@ointercase.com.br
 
 
 # Boa sorte!!!
