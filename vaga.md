@@ -16,6 +16,7 @@ https://vue-flix-backend.herokuapp.com/media/{type}/search/{page}
 ``
 {type} = movie ou tv
 ``
+
 ``
 {page} = número da pagina
 ``
@@ -42,4 +43,40 @@ https://vue-flix-backend.herokuapp.com/media/{type}/{id}
     + Lista de séries, em forma de card
     + Uma pagina de detalhamento do filme/série
 
+## Entrega:
+Para iniciar o teste, faça um fork deste repositório, crie uma branch com o seu nome completo (ex: fulanodossantos) e depois envie-nos o pull request. 
+Se você apenas clonar o repositório não vai conseguir fazer push e depois vai ser mais complicado fazer o pull request.
+
+Envie também seu currículo para devteam@ointercase.com.br, caso ainda não tenha feito.
+
+### Bônus:
+A entrega desses requisitos será considerado como um diferencial para a vaga, mas não é obrigatório.
+
++ Implementar sistema de paginação.
++ Implementar filtro por gênero.
+
+* EndPoint de gêneros
+https://vue-flix-backend.herokuapp.com/genres/{type}
+
+* Filtrar filmes/séries por gênero
+https://vue-flix-backend.herokuapp.com/media/movie/search/1?genre={genre}year={year}
+
+``
+{genre} = id do gênero
+``
+
+``
+{year} = ano de lançamento do filme/serie. ex: 2020
+``
+
+## Nossa análise
+* Organização do código.
+* Separação de módulos.
+* Legibilidade.
+* Comentários.
+
+# Qualquer dúvida sobre esse teste, favor enviar um email para devteam@ointercase.com.br
+
+
+# Boa sorte!!!
 
