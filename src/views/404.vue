@@ -1,11 +1,11 @@
 <template>
   <div class="home">
-    <router-view />
+    Página Não encontrada
   </div>
 </template>
 
 <script>
 export default {
-  name: "Home"
+  name: "404"
 };
 </script>
