@@ -7,5 +7,5 @@ export default class MovieService extends Rest {
   /**
    * @type {String}
    */
-  static resource = '/movie/search/1'
+  static resource = '/media/movie/search'
 }

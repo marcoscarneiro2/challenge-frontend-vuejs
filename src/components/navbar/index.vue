@@ -4,7 +4,7 @@
   	<nav class="navbar bg-nav-bar">
 		<div class="container">
 			<a class="navbar-brand" href="#">
-        Filmes
+        Filmes & Séries
 			</a>
 		</div>
 	</nav>
@@ -24,13 +24,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/variables.scss';
-
 
 .bg-nav-bar{
   text-align: center;
-  background: #FFF;
+  background: $base-color;
   a{
+    color: #fff !important;
     letter-spacing: 0px;
     color: $base-color;
     font-weight: bold;

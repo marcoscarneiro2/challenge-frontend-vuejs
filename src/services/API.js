@@ -7,7 +7,7 @@ export default class Api extends Http {
   /**
    * @type {String}
    */
-  static base = '/media/'
+  static base = 'https://vue-flix-backend.herokuapp.com';
 
   /**
    * @param {String} path

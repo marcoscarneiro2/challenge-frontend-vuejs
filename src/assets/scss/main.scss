@@ -13,21 +13,6 @@ line-height: 1.333rem;
 font-family: 'Poppins', sans-serif !important;
 }
 
-.bold {
-font-weight: bold;
-}
-
-.light {
-font-weight: 400;
-}
-
-.border-bottom {
-border-bottom: 1px solid gray;
-}
-
-.uppercase {
-text-transform: uppercase;
-}
 
 .navbar {
 background: white;
@@ -37,65 +22,4 @@ background: white;
 .navbar-brand {
   font-size: 14px;
   color: #888;
-}
-
-.font-12 {
-font-size: 12px;
-}
-
-.font-15 {
-font-size: 15px;
-}
-
-.font-40 {
-font-size: 40px;
-}
-
-.hidden {
-display: none;
-}
-
-.white {
-color: white !important;
-}
-
-.gray {
-color: #636871 !important;
-}
-
-.green {
-color: green !important;
-}
-
-.campo-invalido {
-  border-color: #dc3545 !important;
-  background: pink !important;
-}
-
-.payment-selected {
-padding: 10px;
-  border: 1px solid lightblue;
-  background: #eee;
-  color: lightblue;
-}
-
-.height-50 {
-height: 50px;
-}
-
-.btn-green{
-  display: inline-block;
-  border-radius: 25px;
-  padding: 10px 20px;
-  border: 1px $base-color solid !important;
-  width: auto;
-  color: #fff;
-  background: $base-color !important;
-  cursor: pointer;
-
-  &:hover{
-    background: #fff !important;
-    color: $base-color !important;
-    border: 1px $base-color solid !important;
-  }
 }

@@ -1,5 +1,10 @@
 <template>
   <div class="Single-background" :style="{backgroundImage: 'url('+ item.backdrop_path +')' }">
+
+    <div class="Single-go-back" @click="goBack">
+      <font-awesome-icon icon="arrow-left" />
+    </div>
+
     <b-container class="Single-container">
       <b-row>
 
@@ -9,9 +14,13 @@
               <b-img class="Single-cover" :src="item.poster_path" />
             </b-col>
             <b-col cols="12" md="8">
+              <!-- Title -->
               <div class="Single-title">{{ item.title }}</div>
-              <b-form-rating class="Single-stars" v-model="item.vote_average / 5" readonly no-border size="sm"></b-form-rating>
 
+              <!-- Rating -->
+              <b-form-rating class="Single-stars" :value="item.vote_average - 5" readonly no-border size="sm"></b-form-rating>
+
+              <!-- Genres -->
               <ul class="Single-genres">
                 <li v-for="(genre, index) in item.genres" :key="genre.id">{{ genre.name }}<span v-if="index < item.genres.length - 1">,</span></li>
               </ul>
@@ -43,6 +52,9 @@ export default {
     }
   },
   methods: {
+    goBack(){
+      this.$router.back();
+    },
     fetchMovie(id){
 
       let data = {
@@ -72,14 +84,41 @@ export default {
 
 .Single-background{
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  padding: 0;
+  background-color: #000;
   margin: 0;
   padding-top: 250px;
+  padding-bottom: 20px;
+
+  &::after{
+    content: '';
+    background: -moz-linear-gradient(top,  rgba(0,0,0,1) 13%, rgba(0,0,0,0.84) 35%, rgba(0,0,0,0.82) 38%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 13%,rgba(0,0,0,0.84) 35%,rgba(0,0,0,0.82) 38%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,1) 13%,rgba(0,0,0,0.84) 35%,rgba(0,0,0,0.82) 38%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 200px;
+  }
+
+  .Single-go-back{
+    position: absolute;
+    left: 20px; 
+    top: 20px;
+    color: #fff;
+    font-size: 30px;
+    z-index: 99;
+    cursor: pointer;
+  }
+
+
 
   .Single-container{
     background: #fff;
@@ -98,6 +137,7 @@ export default {
       font-size: 42px;
       font-weight: 300;
       color: $base-color;
+      line-height: 1.1;
     }
 
     .Single-stars{

@@ -14,7 +14,7 @@ export default {
   name: 'page-not-found',
   methods: {
     goTo() {
-      // this.$router.push({ name: 'Home' });
+     this.$router.push({ name: 'Movies' });
     },
   },
 };

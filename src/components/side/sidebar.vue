@@ -1,13 +1,27 @@
 <template>
     <ul class="Menu">
-        <li class="Menu-item"><router-link :to="{name: 'Movies'}">Filmes</router-link></li>
-        <li class="Menu-item"><router-link :to="{name: 'Shows'}">Séries</router-link></li>
+        <li class="Menu-item" :class="{'active': active == 'Movies' || active == 'Index'}">
+            <router-link :to="{name: 'Movies'}">
+                <font-awesome-icon icon="video" />
+                Filmes
+            </router-link>
+        </li>
+        <li class="Menu-item" :class="{'active': active == 'Shows'}">
+            <router-link :to="{name: 'Shows'}">
+                <font-awesome-icon icon="tv" />
+                Séries
+            </router-link>
+        </li>
     </ul>
 </template>
 
 <script>
 export default {
-    
+    computed:{
+        active(){
+            return this.$route.name;
+        }
+    }
 }
 </script>
 
@@ -21,9 +35,14 @@ export default {
     list-style-type: none;
 
     .Menu-item{
-        display: block;
-        padding: 10px;
+        
+        svg{
+            margin: 0 5px;
+        }
+
         a{
+            display: block;
+            padding: 10px;
             color: #444;
         }
 
@@ -34,6 +53,13 @@ export default {
                 color: #fff;
                 text-decoration: none;
             }
+        }
+    }
+
+    .active{
+        background: $base-color;
+        a{
+            color: #fff;
         }
     }
 }

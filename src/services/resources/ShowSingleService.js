@@ -7,5 +7,5 @@ export default class ShowSingleService extends Rest {
   /**
    * @type {String}
    */
-  static resource = '/tv'
+  static resource = '/media/tv'
 }

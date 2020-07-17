@@ -5,6 +5,11 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: '/',
+    name: 'Index',
+    component: () => import('../views/Movies.vue'),
+  },
+  {
     path: '/filme/:id',
     name: 'SingleMovie',
     component: () => import('../views/SingleMovie.vue'),

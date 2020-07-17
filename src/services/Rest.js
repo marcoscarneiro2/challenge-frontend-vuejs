@@ -43,7 +43,14 @@ export default class Rest extends Api {
    * @returns {*|PromiseLike<T | never>|Promise<T | never>}
    */
   read(record) {
-    return this.get(`/${this.getId(record)}`);
+    if(Object.keys(record).length == 1){
+      return this.get(`/${this.getId(record)}`);
+    }else{
+      var id = this.getId(record);
+      delete record['id'];
+      const queryString = Object.keys(record).map(key => key + '=' + record[key]).join('&');
+      return this.get(`/${id}?${queryString}`);
+    }
   }
 
   /**

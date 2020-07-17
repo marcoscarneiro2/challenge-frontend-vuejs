@@ -1,15 +1,15 @@
 <template>
-<div>
+<b-container fluid >
   <navbar />
   <b-row>
-    <b-col cols="12" md="2">
+    <b-col cols="12" md="2" class="p-0">
       <sidebar />
     </b-col>
     <b-col cols="12" md="10">
         <movies />
     </b-col>
   </b-row>
-</div>
+</b-container>
 </template>
 
 <script>
