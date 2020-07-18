@@ -1,18 +1,16 @@
 <template>
-  <div>Tvs</div>
+  <div>
+    <screen :type="'tv'" />
+  </div>
 </template>
 
 <script>
-import mediaService from "@/service/media";
+import Screen from "@/components/Screen.vue";
+
 export default {
   name: "TVs",
-  data() {
-    return {
-      medias: []
-    };
-  },
-  created() {
-    mediaService.getAllMedia("tv");
+  components: {
+    Screen
   }
 };
 </script>
