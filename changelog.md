@@ -1,4 +1,0 @@
-- compor tasks de hoje com uma function
-- responsividade
-- fix nos card (size)
-- concentrar o scss com variaveis
