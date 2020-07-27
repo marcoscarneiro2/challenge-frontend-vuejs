@@ -79,4 +79,4 @@ https://vue-flix-backend.herokuapp.com/media/movie/search/1?genre={genre}year={y
 
 
 # Boa sorte!!!
-
+O 
