@@ -78,5 +78,5 @@ https://vue-flix-backend.herokuapp.com/media/movie/search/1?genre={genre}year={y
 ## Qualquer dúvida sobre esse teste, favor enviar um email para devteam@intercase.com.br
 
 
-# Boa sorte!!!
+# Boa sorte!!!!
 O 
